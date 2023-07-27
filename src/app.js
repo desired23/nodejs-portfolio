@@ -16,9 +16,9 @@ app.use("/api", router);
 
 export const viteNodeApp = app;
 
-// app.listen(process.env.PORT, () => {
-//   console.log(`Server is running on ${process.env.PORT}`);
-// });
+ app.listen(process.env.PORT, () => {
+   console.log(`Server is running on ${process.env.PORT}`);
+ });
 
 // Step 1: tạo file db.json
 // Step 2: cài đặt json-server.
