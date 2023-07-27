@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Product from "./product";
+import Product from "./product.js";
 const { Schema } = mongoose;
 
 const infoSchema = new Schema(
