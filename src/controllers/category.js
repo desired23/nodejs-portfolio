@@ -62,7 +62,8 @@ export const create = async (req, res) => {
 
 export const remove = async (req, res) => {
   try {
-    const category = await Category.delete(req.params.id);
+    const category = await Category.findByIdAndDelete(req.params.id);
+    console.log(category)
     if (!category) {
       return res.status(400).json({
         message: "Xoa category khong thanh cong!",

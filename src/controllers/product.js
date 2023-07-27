@@ -66,7 +66,7 @@ export const create = async (req, res) => {
 export const remove = async (req, res) => {
   try {
       console.log(req.params.id)
-    const product = await Product.findOneAndDelete(req.params.id);
+    const product = await Product.findByIdAndDelete(req.params.id);
     // 
     return res.status(200).json({
       message: "Sản phẩm đã được xóa thành công",
